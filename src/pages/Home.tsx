@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Car, Shield, Clock, Award, MapPin, Headphones } from "lucide-react";
-import heroImage from "@/assets/hero-car.jpg";
+import HeroSlideshow from "@/components/HeroSlideshow";
 import economyCar from "@/assets/economy-car.jpg";
 import suvCar from "@/assets/suv-car.jpg";
 import executiveCar from "@/assets/executive-car.jpg";
@@ -26,36 +26,8 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center">
-        <div className="absolute inset-0">
-          <img src={heroImage} alt="Luxury car" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 gradient-overlay"></div>
-        </div>
-        
-        <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground animate-fade-in-up">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Rent the Car You Want.
-            <br />
-            <span className="text-accent">Anytime. Anywhere.</span>
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-            Affordable. Executive. Reliable – Jaden Car Rental Services.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/booking">
-              <Button variant="hero" size="xl">
-                Book a Ride
-              </Button>
-            </Link>
-            <Link to="/fleet">
-              <Button variant="glass" size="xl">
-                View Fleet
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Hero Slideshow Section */}
+      <HeroSlideshow />
 
       {/* Why Choose Us Section */}
       <section className="py-20 bg-background">
