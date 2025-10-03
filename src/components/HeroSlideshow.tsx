@@ -2,28 +2,28 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import heroSlide1 from "@/assets/hero-slide-1.jpg";
-import heroSlide2 from "@/assets/hero-slide-2.jpg";
-import heroSlide3 from "@/assets/hero-slide-3.jpg";
+import redMazdaFront from "@/assets/red-mazda-front.jpg";
+import redMazdaSide from "@/assets/red-mazda-side.jpg";
+import blueSuv from "@/assets/blue-suv.jpg";
 
 const HeroSlideshow = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
-      image: heroSlide1,
+      image: redMazdaFront,
       title: "Drive Your Journey",
       subtitle: "With Ease",
       description: "Premium Rentals & Transfers in Nairobi & Mombasa",
     },
     {
-      image: heroSlide2,
+      image: redMazdaSide,
       title: "Your Trusted Partner",
       subtitle: "For Every Journey",
       description: "Daily, Weekly Rentals & Airport Transfers",
     },
     {
-      image: heroSlide3,
+      image: blueSuv,
       title: "Affordable & Reliable",
       subtitle: "Business & Personal Travel",
       description: "Experience Premium Car Rental Services",

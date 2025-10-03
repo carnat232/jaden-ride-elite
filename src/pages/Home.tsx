@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Car, Shield, Calendar, Plane, Briefcase, Headphones } from "lucide-react";
 import HeroSlideshow from "@/components/HeroSlideshow";
-import economyCar from "@/assets/economy-car.jpg";
-import suvCar from "@/assets/suv-car.jpg";
-import executiveCar from "@/assets/executive-car.jpg";
-import luxuryCar from "@/assets/luxury-car.jpg";
+import redMazdaSide from "@/assets/red-mazda-side.jpg";
+import blueSuv from "@/assets/blue-suv.jpg";
+import blackSuv from "@/assets/black-suv.jpg";
+import redMazdaFront2 from "@/assets/red-mazda-front2.jpg";
 
 const Home = () => {
   const features = [
@@ -18,10 +18,10 @@ const Home = () => {
   ];
 
   const popularCars = [
-    { name: "Economy Class", image: economyCar, price: "$45/day", description: "Perfect for city drives" },
-    { name: "SUV & Family", image: suvCar, price: "$75/day", description: "Spacious and comfortable" },
-    { name: "Executive", image: executiveCar, price: "$120/day", description: "Business class luxury" },
-    { name: "Premium Luxury", image: luxuryCar, price: "$200/day", description: "Ultimate comfort" },
+    { name: "Economy Class", image: redMazdaSide, price: "KSh 4,500/day", description: "Perfect for city drives" },
+    { name: "SUV & Family", image: blueSuv, price: "KSh 7,500/day", description: "Spacious and comfortable" },
+    { name: "Executive", image: blackSuv, price: "KSh 12,000/day", description: "Business class luxury" },
+    { name: "Premium", image: redMazdaFront2, price: "KSh 6,000/day", description: "Style and comfort" },
   ];
 
   return (

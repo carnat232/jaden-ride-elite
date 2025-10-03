@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,10 +36,12 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center space-x-2 group">
-            <div className="text-2xl font-bold text-primary-foreground group-hover:scale-105 transition-smooth">
-              Jaden <span className="text-accent">Car Rental</span>
-            </div>
+          <Link to="/" className="flex items-center group">
+            <img 
+              src={logo} 
+              alt="Jaden Car Rental Services" 
+              className="h-14 w-auto object-contain group-hover:scale-105 transition-smooth"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -60,7 +63,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="tel:+1234567890" className="flex items-center space-x-2 text-primary-foreground hover:text-accent transition-smooth">
+            <a href="tel:+254704848442" className="flex items-center space-x-2 text-primary-foreground hover:text-accent transition-smooth">
               <Phone className="w-4 h-4" />
               <span className="font-medium">Call Us</span>
             </a>

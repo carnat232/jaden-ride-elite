@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Users, Fuel, Settings, Check } from "lucide-react";
-import economyCar from "@/assets/economy-car.jpg";
-import suvCar from "@/assets/suv-car.jpg";
-import executiveCar from "@/assets/executive-car.jpg";
-import luxuryCar from "@/assets/luxury-car.jpg";
+import redMazdaSide from "@/assets/red-mazda-side.jpg";
+import redMazdaFront2 from "@/assets/red-mazda-front2.jpg";
+import blueSuv from "@/assets/blue-suv.jpg";
+import blackSuv from "@/assets/black-suv.jpg";
 
 const Fleet = () => {
   const fleetCategories = [
@@ -13,21 +13,15 @@ const Fleet = () => {
       description: "Perfect for daily commutes and city driving",
       cars: [
         {
-          name: "Toyota Corolla",
-          image: economyCar,
-          price: "$45",
+          name: "Mazda Demio",
+          image: redMazdaSide,
+          price: "KSh 4,500",
           features: ["5 Seats", "Auto", "AC", "Bluetooth"],
         },
         {
-          name: "Kia Rio",
-          image: economyCar,
-          price: "$40",
-          features: ["5 Seats", "Manual", "AC", "GPS"],
-        },
-        {
-          name: "Honda Civic",
-          image: economyCar,
-          price: "$50",
+          name: "Mazda 2",
+          image: redMazdaFront2,
+          price: "KSh 5,000",
           features: ["5 Seats", "Auto", "AC", "Premium Audio"],
         },
       ],
@@ -37,22 +31,16 @@ const Fleet = () => {
       description: "Spacious and comfortable for family trips",
       cars: [
         {
-          name: "Toyota RAV4",
-          image: suvCar,
-          price: "$75",
-          features: ["7 Seats", "Auto", "4WD", "Smart Key"],
+          name: "Honda HR-V",
+          image: blueSuv,
+          price: "KSh 7,500",
+          features: ["5 Seats", "Auto", "AWD", "Smart Key"],
         },
         {
-          name: "Honda CR-V",
-          image: suvCar,
-          price: "$70",
-          features: ["5 Seats", "Auto", "AWD", "Panoramic Roof"],
-        },
-        {
-          name: "Toyota Highlander",
-          image: suvCar,
-          price: "$85",
-          features: ["8 Seats", "Auto", "4WD", "Leather Seats"],
+          name: "Honda Vezel",
+          image: blackSuv,
+          price: "KSh 8,000",
+          features: ["5 Seats", "Auto", "4WD", "Leather Seats"],
         },
       ],
     },
@@ -61,22 +49,10 @@ const Fleet = () => {
       description: "Professional elegance for corporate needs",
       cars: [
         {
-          name: "Mercedes C300",
-          image: executiveCar,
-          price: "$120",
-          features: ["5 Seats", "Auto", "Premium", "Massage Seats"],
-        },
-        {
-          name: "BMW 5 Series",
-          image: executiveCar,
-          price: "$130",
-          features: ["5 Seats", "Auto", "Luxury", "Advanced Tech"],
-        },
-        {
-          name: "Audi A6",
-          image: executiveCar,
-          price: "$125",
-          features: ["5 Seats", "Auto", "Premium", "Virtual Cockpit"],
+          name: "Executive Sedan",
+          image: blackSuv,
+          price: "KSh 12,000",
+          features: ["5 Seats", "Auto", "Premium", "Leather Interior"],
         },
       ],
     },
@@ -85,21 +61,9 @@ const Fleet = () => {
       description: "Ultimate luxury for special occasions",
       cars: [
         {
-          name: "Range Rover",
-          image: luxuryCar,
-          price: "$200",
-          features: ["5 Seats", "Auto", "4WD", "Ultimate Luxury"],
-        },
-        {
-          name: "Mercedes G-Wagon",
-          image: luxuryCar,
-          price: "$250",
-          features: ["5 Seats", "Auto", "4WD", "Premium Plus"],
-        },
-        {
-          name: "Lexus LX",
-          image: luxuryCar,
-          price: "$220",
+          name: "Luxury SUV",
+          image: blackSuv,
+          price: "KSh 15,000",
           features: ["7 Seats", "Auto", "4WD", "Presidential"],
         },
       ],
