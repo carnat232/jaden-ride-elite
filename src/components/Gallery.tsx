@@ -14,27 +14,45 @@ import whiteSedan from "@/assets/gallery/white-sedan.jpg";
 import whiteSedanFront from "@/assets/gallery/white-sedan-front.jpg";
 import redCx5 from "@/assets/gallery/red-cx5.jpg";
 import redCx5Front from "@/assets/gallery/red-cx5-front.jpg";
+import redCx5Side2 from "@/assets/gallery/red-cx5-side2.jpg";
 import mazdaEngine from "@/assets/gallery/mazda-engine.jpg";
+import whiteCx5Front from "@/assets/gallery/white-cx5-front.jpg";
+import whiteCx5Front2 from "@/assets/gallery/white-cx5-front2.jpg";
+import whiteCx5Interior from "@/assets/gallery/white-cx5-interior.jpg";
+import whiteCx5Rear from "@/assets/gallery/white-cx5-rear.jpg";
+import mazdaCx5Interior2 from "@/assets/gallery/mazda-cx5-interior2.jpg";
+import blueMazda6 from "@/assets/gallery/blue-mazda6.jpg";
+import blueMazda6Angle from "@/assets/gallery/blue-mazda6-angle.jpg";
+import blueMazda6Side from "@/assets/gallery/blue-mazda6-side.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const galleryImages = [
-    { src: redMazdaFront, alt: "Red Mazda Front View", category: "Economy" },
-    { src: redMazdaSide, alt: "Red Mazda Side View", category: "Economy" },
-    { src: redMazdaFront2, alt: "Red Mazda Exterior", category: "Economy" },
-    { src: blueSuv, alt: "Blue SUV", category: "SUV" },
-    { src: blackSuv, alt: "Black SUV", category: "SUV" },
+    { src: redMazdaFront, alt: "Red Mazda Demio Front View", category: "Economy" },
+    { src: redMazdaSide, alt: "Red Mazda Demio Side View", category: "Economy" },
+    { src: redMazdaFront2, alt: "Red Mazda 2 Exterior", category: "Economy" },
+    { src: blueSuv, alt: "Blue Honda HR-V", category: "SUV" },
+    { src: blackSuv, alt: "Black Honda Vezel", category: "SUV" },
     { src: blackSuvFront, alt: "Black Honda HR-V Front", category: "SUV" },
     { src: blackSuvRear, alt: "Black Honda HR-V Rear", category: "SUV" },
     { src: blackSuvSide, alt: "Black Honda HR-V Side", category: "SUV" },
-    { src: blackSuvMural, alt: "Black Honda HR-V", category: "SUV" },
-    { src: whiteSedan, alt: "White Sedan Beach View", category: "Executive" },
-    { src: whiteSedanFront, alt: "White Sedan Front", category: "Executive" },
-    { src: redCx5, alt: "Red Mazda CX-5 Rear", category: "Premium" },
-    { src: redCx5Front, alt: "Red Mazda CX-5 Front", category: "Premium" },
-    { src: carInterior, alt: "Premium Car Interior", category: "Interior" },
-    { src: mazdaEngine, alt: "Well-Maintained Engine", category: "Quality" },
+    { src: blackSuvMural, alt: "Black Honda HR-V Scenic", category: "SUV" },
+    { src: whiteCx5Front, alt: "White Mazda CX-5 Front", category: "Premium" },
+    { src: whiteCx5Front2, alt: "White Mazda CX-5 Angle", category: "Premium" },
+    { src: whiteCx5Rear, alt: "White Mazda CX-5 Rear", category: "Premium" },
+    { src: redCx5, alt: "Red Mazda CX-5 Rear View", category: "Premium" },
+    { src: redCx5Front, alt: "Red Mazda CX-5 Front View", category: "Premium" },
+    { src: redCx5Side2, alt: "Red Mazda CX-5 Side View", category: "Premium" },
+    { src: blueMazda6, alt: "Blue Mazda 6 Sedan", category: "Executive" },
+    { src: blueMazda6Angle, alt: "Blue Mazda 6 Angle View", category: "Executive" },
+    { src: blueMazda6Side, alt: "Blue Mazda 6 Side View", category: "Executive" },
+    { src: whiteSedan, alt: "White Executive Sedan Beach", category: "Executive" },
+    { src: whiteSedanFront, alt: "White Executive Sedan Front", category: "Executive" },
+    { src: carInterior, alt: "Premium Honda Interior", category: "Interior" },
+    { src: whiteCx5Interior, alt: "White CX-5 Interior Seats", category: "Interior" },
+    { src: mazdaCx5Interior2, alt: "Mazda CX-5 Dashboard", category: "Interior" },
+    { src: mazdaEngine, alt: "Well-Maintained Engine Bay", category: "Quality" },
   ];
 
   return (
@@ -43,11 +61,11 @@ const Gallery = () => {
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Gallery</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Explore our premium fleet - well-maintained vehicles ready for your journey
+            Explore our premium fleet - {galleryImages.length} stunning photos showcasing well-maintained vehicles ready for your journey
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {galleryImages.map((image, index) => (
             <div
               key={index}
