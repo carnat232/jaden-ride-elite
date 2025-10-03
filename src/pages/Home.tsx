@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Car, Shield, Clock, Award, MapPin, Headphones } from "lucide-react";
+import { Car, Shield, Calendar, Plane, Briefcase, Headphones } from "lucide-react";
 import HeroSlideshow from "@/components/HeroSlideshow";
 import economyCar from "@/assets/economy-car.jpg";
 import suvCar from "@/assets/suv-car.jpg";
@@ -9,12 +9,12 @@ import luxuryCar from "@/assets/luxury-car.jpg";
 
 const Home = () => {
   const features = [
-    { icon: MapPin, title: "Airport Pickups", description: "Fast & reliable airport transfer services" },
-    { icon: Car, title: "Chauffeur & Self-Drive", description: "Choose your preferred driving option" },
-    { icon: Clock, title: "Flexible Plans", description: "Daily, weekly, or monthly rental options" },
-    { icon: Shield, title: "Insured Vehicles", description: "All cars are fully insured for your safety" },
-    { icon: Award, title: "Premium Fleet", description: "Luxury and budget-friendly options available" },
-    { icon: Headphones, title: "24/7 Support", description: "Round-the-clock customer assistance" },
+    { icon: Calendar, title: "Daily & Weekly Rentals", description: "Flexible rental periods to suit your needs" },
+    { icon: Plane, title: "Airport Transfers", description: "JKIA, Wilson & Moi International Airport" },
+    { icon: Briefcase, title: "Business & Personal", description: "Perfect for corporate and leisure travel" },
+    { icon: Shield, title: "Affordable & Reliable", description: "Quality vehicles at competitive rates" },
+    { icon: Car, title: "Premium Fleet", description: "Well-maintained cars for every occasion" },
+    { icon: Headphones, title: "24/7 Support", description: "Available anytime in Nairobi & Mombasa" },
   ];
 
   const popularCars = [

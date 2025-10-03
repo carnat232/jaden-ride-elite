@@ -40,7 +40,7 @@ const About = () => {
         <div className="container mx-auto px-4 text-center animate-fade-in">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">About Us</h1>
           <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
-            Driven by Excellence. Built on Trust.
+            Drive Your Journey With Ease
           </p>
         </div>
       </section>
@@ -52,20 +52,13 @@ const About = () => {
             <h2 className="text-4xl font-bold mb-8 text-center">Our Story</h2>
             <div className="space-y-6 text-lg text-muted-foreground">
               <p>
-                Jaden Car Rental Services provides premium transportation solutions for travelers,
-                professionals, families, and businesses. With a growing fleet and reliable support,
-                we make renting a car seamless, safe, and comfortable.
+                Jaden Car Rental Services is your trusted partner for premium car rentals and airport transfers in Nairobi and Mombasa. We provide reliable, affordable, and comfortable transportation solutions for both personal and business travel.
               </p>
               <p>
-                Founded with a vision to revolutionize car rental experiences, we've grown from a
-                small local business to a trusted name serving thousands of satisfied customers.
-                Our commitment to quality, safety, and customer satisfaction remains unwavering.
+                With locations in Nairobi (Bee Center Umoja Phase 2) and Mombasa (Bamburi), we're strategically positioned to serve travelers throughout Kenya. Whether you need a car for a day, a week, or airport pickup, we've got you covered.
               </p>
               <p>
-                Whether you need a reliable vehicle for a business meeting, a spacious SUV for a
-                family vacation, or a luxury car for a special occasion, we have the perfect
-                solution for you. Our team works tirelessly to ensure every journey with us is
-                exceptional.
+                Our mission is simple: to make every journey smooth, convenient, and memorable. We focus on customer satisfaction, reliability, and providing vehicles that meet the highest standards of comfort and safety.
               </p>
             </div>
           </div>

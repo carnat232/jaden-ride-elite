@@ -12,7 +12,7 @@ const Footer = () => {
               Jaden <span className="text-accent">Car Rental</span>
             </h3>
             <p className="text-sm text-primary-foreground/80">
-              Luxury & Convenience on Wheels. Your trusted partner for premium car rentals.
+              Drive Your Journey With Ease. Premium car rentals in Nairobi & Mombasa.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-primary-foreground/80 hover:text-accent transition-smooth">
@@ -58,11 +58,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4 text-accent">Our Services</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
+              <li>Daily Rentals</li>
+              <li>Weekly Rentals</li>
               <li>Airport Transfers</li>
               <li>Corporate Rentals</li>
-              <li>Self-Drive Options</li>
-              <li>Chauffeur Services</li>
-              <li>Wedding & Events</li>
+              <li>Business Travel</li>
             </ul>
           </div>
 
@@ -72,15 +72,15 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center space-x-2 text-primary-foreground/80">
                 <Phone className="w-4 h-4 text-accent" />
-                <span>+1 (234) 567-8900</span>
+                <span>0704848442 / 7</span>
               </li>
               <li className="flex items-center space-x-2 text-primary-foreground/80">
                 <Mail className="w-4 h-4 text-accent" />
-                <span>info@jadencarrental.com</span>
+                <span>selitecarhirerentalservices@gmail.com</span>
               </li>
               <li className="flex items-center space-x-2 text-primary-foreground/80">
                 <MapPin className="w-4 h-4 text-accent" />
-                <span>123 Business Avenue, City</span>
+                <span>Nairobi & Mombasa</span>
               </li>
             </ul>
           </div>

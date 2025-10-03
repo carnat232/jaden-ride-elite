@@ -1,44 +1,32 @@
-import { Plane, Briefcase, Car, Heart, Calendar, Map } from "lucide-react";
+import { Plane, Briefcase, Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const Services = () => {
   const services = [
     {
-      icon: Plane,
-      title: "Airport Transfers",
-      description: "Reliable pickup and drop-off services at all major airports. Track your flight in real-time and enjoy seamless transfers with professional drivers.",
-      features: ["Flight tracking", "Meet & greet", "24/7 availability", "Luggage assistance"],
-    },
-    {
-      icon: Briefcase,
-      title: "Corporate Rentals",
-      description: "Professional transportation solutions for businesses. Impress clients and ensure executive comfort with our premium fleet and dedicated account management.",
-      features: ["Volume discounts", "Priority booking", "Monthly billing", "Executive vehicles"],
-    },
-    {
-      icon: Car,
-      title: "Self-Drive & Chauffeur",
-      description: "Choose your preferred driving experience. Drive yourself or relax with our professional, courteous chauffeurs who know the area inside out.",
-      features: ["Flexible options", "Experienced drivers", "GPS navigation", "24/7 support"],
-    },
-    {
-      icon: Heart,
-      title: "Weddings & VIP Events",
-      description: "Make your special day unforgettable with our luxury vehicles. From elegant sedans to stretch limousines, we provide the perfect ride for your celebration.",
-      features: ["Luxury fleet", "Decorations available", "Professional service", "Package deals"],
+      icon: Calendar,
+      title: "Daily Rentals",
+      description: "Perfect for short trips and errands. Rent a reliable vehicle for a day and enjoy the freedom to explore Nairobi and Mombasa at your own pace.",
+      features: ["Flexible hours", "Multiple vehicle options", "Easy booking", "Affordable rates"],
     },
     {
       icon: Calendar,
-      title: "Long-Term Leasing",
-      description: "Cost-effective solutions for extended rentals. Whether you need a car for a month or a year, enjoy competitive rates and flexible terms.",
-      features: ["Discounted rates", "Flexible terms", "Regular maintenance", "Easy swap options"],
+      title: "Weekly Rentals",
+      description: "Extended stays made easy. Get better rates with our weekly rental packages, ideal for business trips or extended vacations in Kenya.",
+      features: ["Discounted weekly rates", "Flexible pickup/return", "Well-maintained fleet", "24/7 support"],
     },
     {
-      icon: Map,
-      title: "City Tours & Travel",
-      description: "Explore new destinations with confidence. Our well-maintained vehicles and optional tour guides ensure you make the most of your journey.",
-      features: ["Tour packages", "Local expertise", "Customizable routes", "Group discounts"],
+      icon: Briefcase,
+      title: "Business / Corporate Use",
+      description: "Professional transportation solutions for businesses. Impress clients and ensure executive comfort with our premium fleet and dedicated corporate services.",
+      features: ["Corporate accounts", "Priority booking", "Executive vehicles", "Monthly billing"],
+    },
+    {
+      icon: Plane,
+      title: "Airport Transfers for Travellers",
+      description: "Seamless airport transfers in Nairobi and Mombasa. We ensure timely pickups and drop-offs at JKIA, Wilson Airport, and Moi International Airport.",
+      features: ["Flight tracking", "Meet & greet", "Luggage assistance", "Punctual service"],
     },
   ];
 

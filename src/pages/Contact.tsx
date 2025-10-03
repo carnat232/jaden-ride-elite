@@ -28,25 +28,25 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone / WhatsApp",
-      content: "+1 (234) 567-8900",
-      link: "tel:+1234567890",
+      content: "0704848442 / 7",
+      link: "tel:+254704848442",
     },
     {
       icon: Mail,
       title: "Email",
-      content: "info@jadencarrental.com",
-      link: "mailto:info@jadencarrental.com",
+      content: "selitecarhirerentalservices@gmail.com",
+      link: "mailto:selitecarhirerentalservices@gmail.com",
     },
     {
       icon: MapPin,
-      title: "Address",
-      content: "123 Business Avenue, City, State 12345",
+      title: "Nairobi Office",
+      content: "Bee Center Umoja Phase 2",
       link: "#",
     },
     {
-      icon: Clock,
-      title: "Working Hours",
-      content: "Mon - Sun: 24/7 Available",
+      icon: MapPin,
+      title: "Mombasa Office",
+      content: "Bamburi",
       link: "#",
     },
   ];
@@ -161,7 +161,7 @@ const Contact = () => {
                 Chat with us directly on WhatsApp for instant support
               </p>
               <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/254704848442"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block"
@@ -186,7 +186,7 @@ const Contact = () => {
                 <MapPin className="w-16 h-16 text-accent mx-auto mb-4" />
                 <p className="text-muted-foreground">Map integration available</p>
                 <p className="text-sm text-muted-foreground mt-2">
-                  123 Business Avenue, City, State 12345
+                  Nairobi: Bee Center Umoja Phase 2 | Mombasa: Bamburi
                 </p>
               </div>
             </div>

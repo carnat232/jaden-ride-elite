@@ -12,21 +12,21 @@ const HeroSlideshow = () => {
   const slides = [
     {
       image: heroSlide1,
-      title: "Rent the Car You Want.",
-      subtitle: "Anytime. Anywhere.",
-      description: "Affordable. Executive. Reliable – Jaden Car Rental Services.",
+      title: "Drive Your Journey",
+      subtitle: "With Ease",
+      description: "Premium Rentals & Transfers in Nairobi & Mombasa",
     },
     {
       image: heroSlide2,
-      title: "Luxury Meets Comfort",
-      subtitle: "Premium Fleet Selection",
-      description: "Experience excellence with our range of luxury vehicles.",
+      title: "Your Trusted Partner",
+      subtitle: "For Every Journey",
+      description: "Daily, Weekly Rentals & Airport Transfers",
     },
     {
       image: heroSlide3,
-      title: "Your Journey, Your Way",
-      subtitle: "Self-Drive or Chauffeur",
-      description: "Flexible options to match your lifestyle and preferences.",
+      title: "Affordable & Reliable",
+      subtitle: "Business & Personal Travel",
+      description: "Experience Premium Car Rental Services",
     },
   ];
 

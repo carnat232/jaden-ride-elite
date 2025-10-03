@@ -17,7 +17,8 @@ const Booking = () => {
     pickupTime: "",
     dropoffDate: "",
     dropoffTime: "",
-    pickupLocation: "",
+    location: "",
+    airportTransfer: false,
     driverOption: "self-drive",
     fullName: "",
     phone: "",
@@ -43,14 +44,6 @@ const Booking = () => {
     { value: "suv", label: "SUV & Family ($75/day)" },
     { value: "executive", label: "Executive ($120/day)" },
     { value: "luxury", label: "Luxury ($200/day)" },
-  ];
-
-  const locations = [
-    "Airport - International Terminal",
-    "Airport - Domestic Terminal",
-    "Downtown Office",
-    "Hotel Pickup",
-    "Custom Address",
   ];
 
   return (
@@ -188,20 +181,21 @@ const Booking = () => {
                     </h2>
 
                     <div>
-                      <Label htmlFor="pickupLocation">Pickup Location</Label>
+                      <Label htmlFor="location">Pickup Location</Label>
                       <Select
-                        value={formData.pickupLocation}
-                        onValueChange={(value) => handleInputChange("pickupLocation", value)}
+                        value={formData.location}
+                        onValueChange={(value) => handleInputChange("location", value)}
                       >
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select pickup location" />
+                        <SelectTrigger id="location">
+                          <SelectValue placeholder="Select location" />
                         </SelectTrigger>
                         <SelectContent>
-                          {locations.map((location) => (
-                            <SelectItem key={location} value={location}>
-                              {location}
-                            </SelectItem>
-                          ))}
+                          <SelectItem value="nairobi-umoja">Nairobi - Bee Center Umoja Phase 2</SelectItem>
+                          <SelectItem value="nairobi-jkia">Nairobi - JKIA Airport</SelectItem>
+                          <SelectItem value="nairobi-wilson">Nairobi - Wilson Airport</SelectItem>
+                          <SelectItem value="mombasa-bamburi">Mombasa - Bamburi Office</SelectItem>
+                          <SelectItem value="mombasa-airport">Mombasa - Moi International Airport</SelectItem>
+                          <SelectItem value="custom">Custom Address</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -332,10 +326,10 @@ const Booking = () => {
                 Prefer to book by phone?
               </p>
               <a
-                href="tel:+1234567890"
+                href="tel:+254704848442"
                 className="text-accent font-semibold text-lg hover:underline"
               >
-                Call us at +1 (234) 567-8900
+                Call us at 0704848442 / 7
               </a>
             </div>
           </div>
