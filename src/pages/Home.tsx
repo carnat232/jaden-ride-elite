@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Car, Shield, Calendar, Plane, Briefcase, Headphones } from "lucide-react";
 import HeroSlideshow from "@/components/HeroSlideshow";
+import Gallery from "@/components/Gallery";
 import redMazdaSide from "@/assets/red-mazda-side.jpg";
 import blueSuv from "@/assets/blue-suv.jpg";
 import blackSuv from "@/assets/black-suv.jpg";
@@ -103,8 +104,11 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Gallery Section */}
+      <Gallery />
+
       {/* Testimonial Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <div className="flex justify-center mb-6">

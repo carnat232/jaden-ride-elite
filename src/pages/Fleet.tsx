@@ -4,7 +4,9 @@ import { Users, Fuel, Settings, Check } from "lucide-react";
 import redMazdaSide from "@/assets/red-mazda-side.jpg";
 import redMazdaFront2 from "@/assets/red-mazda-front2.jpg";
 import blueSuv from "@/assets/blue-suv.jpg";
-import blackSuv from "@/assets/black-suv.jpg";
+import blackSuvFront from "@/assets/gallery/black-suv-front.jpg";
+import whiteSedan from "@/assets/gallery/white-sedan.jpg";
+import redCx5Front from "@/assets/gallery/red-cx5-front.jpg";
 
 const Fleet = () => {
   const fleetCategories = [
@@ -38,7 +40,7 @@ const Fleet = () => {
         },
         {
           name: "Honda Vezel",
-          image: blackSuv,
+          image: blackSuvFront,
           price: "KSh 8,000",
           features: ["5 Seats", "Auto", "4WD", "Leather Seats"],
         },
@@ -50,7 +52,7 @@ const Fleet = () => {
       cars: [
         {
           name: "Executive Sedan",
-          image: blackSuv,
+          image: whiteSedan,
           price: "KSh 12,000",
           features: ["5 Seats", "Auto", "Premium", "Leather Interior"],
         },
@@ -61,10 +63,10 @@ const Fleet = () => {
       description: "Ultimate luxury for special occasions",
       cars: [
         {
-          name: "Luxury SUV",
-          image: blackSuv,
+          name: "Mazda CX-5 Premium",
+          image: redCx5Front,
           price: "KSh 15,000",
-          features: ["7 Seats", "Auto", "4WD", "Presidential"],
+          features: ["5 Seats", "Auto", "4WD", "Premium Luxury"],
         },
       ],
     },

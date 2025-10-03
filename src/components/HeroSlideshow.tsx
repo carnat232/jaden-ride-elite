@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import redMazdaFront from "@/assets/red-mazda-front.jpg";
 import redMazdaSide from "@/assets/red-mazda-side.jpg";
 import blueSuv from "@/assets/blue-suv.jpg";
+import logo from "@/assets/logo.png";
 
 const HeroSlideshow = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -69,13 +70,22 @@ const HeroSlideshow = () => {
         </div>
       ))}
 
+      {/* Logo Overlay */}
+      <div className="absolute top-8 left-1/2 -translate-x-1/2 z-20 animate-fade-in">
+        <img 
+          src={logo} 
+          alt="Jaden Car Rental Services" 
+          className="h-16 md:h-24 w-auto object-contain drop-shadow-2xl"
+        />
+      </div>
+
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
         <div
           key={currentSlide}
           className="animate-fade-in-up"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-4">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 mt-16 md:mt-20">
             {slides[currentSlide].title}
             <br />
             <span className="text-accent">{slides[currentSlide].subtitle}</span>
