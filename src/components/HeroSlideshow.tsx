@@ -70,12 +70,12 @@ const HeroSlideshow = () => {
         </div>
       ))}
 
-      {/* Logo Overlay */}
-      <div className="absolute top-8 left-1/2 -translate-x-1/2 z-20 animate-fade-in">
+      {/* Logo Overlay - Centered and Large */}
+      <div className="absolute top-12 md:top-16 left-1/2 -translate-x-1/2 z-20 animate-fade-in">
         <img 
           src={logo} 
           alt="Jaden Car Rental Services" 
-          className="h-16 md:h-24 w-auto object-contain drop-shadow-2xl"
+          className="h-32 md:h-40 lg:h-48 w-auto object-contain drop-shadow-2xl"
         />
       </div>
 
@@ -85,7 +85,7 @@ const HeroSlideshow = () => {
           key={currentSlide}
           className="animate-fade-in-up"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 mt-16 md:mt-20">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 mt-24 md:mt-32 lg:mt-40">
             {slides[currentSlide].title}
             <br />
             <span className="text-accent">{slides[currentSlide].subtitle}</span>
