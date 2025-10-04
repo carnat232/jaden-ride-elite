@@ -28,7 +28,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone / WhatsApp",
-      content: "0704848442 / 7",
+      content: "+254704848442",
       link: "tel:+254704848442",
     },
     {

@@ -65,7 +65,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-4">
             <a href="tel:+254704848442" className="flex items-center space-x-2 text-primary-foreground hover:text-accent transition-smooth">
               <Phone className="w-4 h-4" />
-              <span className="font-medium">Call Us</span>
+              <span className="font-medium">+254704848442</span>
             </a>
             <a 
               href="https://wa.me/254704848442?text=Hello%20Jaden%20Car%20Rentals,%20I'd%20like%20to%20book%20a%20car."
