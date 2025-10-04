@@ -33,9 +33,9 @@ const Contact = () => {
     },
     {
       icon: Mail,
-      title: "Email",
-      content: "selitecarhirerentalservices@gmail.com",
-      link: "mailto:selitecarhirerentalservices@gmail.com",
+      title: "WhatsApp",
+      content: "Message us on WhatsApp",
+      link: "https://wa.me/254704848442?text=Hello%20Jaden%20Car%20Rentals,%20I'd%20like%20to%20book%20a%20car.",
     },
     {
       icon: MapPin,

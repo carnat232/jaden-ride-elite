@@ -111,11 +111,15 @@ const Services = () => {
             Book now and discover why thousands trust Jaden Car Rental Services
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/booking">
+            <a 
+              href="https://wa.me/254704848442?text=Hello%20Jaden%20Car%20Rentals,%20I'd%20like%20to%20book%20a%20car."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button variant="hero" size="xl">
                 Book Now
               </Button>
-            </Link>
+            </a>
             <Link to="/contact">
               <Button variant="glass" size="xl">
                 Contact Us

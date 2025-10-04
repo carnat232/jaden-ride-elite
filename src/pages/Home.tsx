@@ -135,11 +135,15 @@ const Home = () => {
           <p className="text-xl mb-8 text-primary-foreground/90 animate-fade-in">
             Book in minutes and hit the road
           </p>
-          <Link to="/booking">
+          <a 
+            href="https://wa.me/254704848442?text=Hello%20Jaden%20Car%20Rentals,%20I'd%20like%20to%20book%20a%20car."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button variant="hero" size="xl" className="animate-scale-in">
               Book Your Ride Now
             </Button>
-          </Link>
+          </a>
         </div>
       </section>
     </div>

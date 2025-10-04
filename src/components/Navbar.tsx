@@ -67,11 +67,15 @@ const Navbar = () => {
               <Phone className="w-4 h-4" />
               <span className="font-medium">Call Us</span>
             </a>
-            <Link to="/booking">
+            <a 
+              href="https://wa.me/254704848442?text=Hello%20Jaden%20Car%20Rentals,%20I'd%20like%20to%20book%20a%20car."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button variant="hero" size="lg">
                 Book Now
               </Button>
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -102,11 +106,16 @@ const Navbar = () => {
                 </Link>
               ))}
               <div className="pt-4 px-4">
-                <Link to="/booking" onClick={() => setIsOpen(false)}>
+                <a 
+                  href="https://wa.me/254704848442?text=Hello%20Jaden%20Car%20Rentals,%20I'd%20like%20to%20book%20a%20car."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsOpen(false)}
+                >
                   <Button variant="hero" size="lg" className="w-full">
                     Book Now
                   </Button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

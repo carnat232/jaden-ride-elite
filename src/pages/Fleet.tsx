@@ -127,11 +127,15 @@ const Fleet = () => {
                         <span className="text-sm text-muted-foreground">Starting at</span>
                         <div className="text-3xl font-bold text-accent">{car.price}<span className="text-lg">/day</span></div>
                       </div>
-                      <Link to="/booking">
+                      <a 
+                        href="https://wa.me/254704848442?text=Hello%20Jaden%20Car%20Rentals,%20I'd%20like%20to%20book%20a%20car."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Button variant="default">
                           Book Now
                         </Button>
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>
